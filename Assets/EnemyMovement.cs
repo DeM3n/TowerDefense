@@ -47,6 +47,7 @@ public class EnemyMovement : MonoBehaviour
         {
             // Enemy đã đi hết đường
             Debug.Log("Enemy reached the end!");
+            EnemySpawner.onEnemyDestroy.Invoke();
             Destroy(gameObject); // hoặc trừ máu base
         }
     }
